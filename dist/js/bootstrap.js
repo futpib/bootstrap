@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the MIT license
  */
 
@@ -526,7 +526,7 @@ if (typeof jQuery === 'undefined') {
     .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
     .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
 
-  $(window).on('load', function () {
+  $(window).on('load.bs.carousel.data-api', function () {
     $('[data-ride="carousel"]').each(function () {
       var $carousel = $(this)
       Plugin.call($carousel, $carousel.data())
